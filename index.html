@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="wrap">
-<header class="top"><div class="brand" id="brandReload" role="button" tabindex="0" aria-label="TRAIN STOP CHALLENGEを再読み込み"><div class="logo">🚆</div><div><h1>TRAIN STOP CHALLENGE</h1><small>PRECISION BRAKING SIMULATOR</small><span class="version-badge" id="gameVersion">GAME VERSION <b>v1.3.0</b><em> LATEST</em></span></div></div><div class="top-actions"><button class="ghost" id="soundQuick">🔊 SOUND ON</button><button class="ghost" id="installBtn" hidden>アプリをインストール</button></div></header>
+<header class="top"><div class="brand" id="brandReload" role="button" tabindex="0" aria-label="TRAIN STOP CHALLENGEを再読み込み"><div class="logo">🚆</div><div><h1>TRAIN STOP CHALLENGE</h1><small>PRECISION BRAKING SIMULATOR</small><span class="version-badge" id="gameVersion">GAME VERSION <b>v1.4.0</b><em> LATEST</em></span></div></div><div class="top-actions"><button class="ghost" id="soundQuick">🔊 SOUND ON</button><button class="ghost" id="installBtn" hidden>アプリをインストール</button></div></header>
 <section class="panel hero"><div><div class="eyebrow">ENDLESS RANDOM CHALLENGE</div><h2>狙った位置に、ぴたりと停車。</h2><div class="muted">ブレーキのタイミングを見極めて、ホームの停止目標に合わせよう。</div></div><div><button class="primary" id="startBtn">運転を開始する</button></div></section>
 <div class="stats"><div class="stat"><small>累計プレイ</small><strong id="plays">0</strong></div><div class="stat"><small>累計スコア</small><strong id="totalScore">0</strong></div><div class="stat"><small>最高スコア</small><strong id="bestScore">0</strong></div><div class="stat"><small>実績解除</small><strong id="achievementCount">0 / 30</strong></div></div>
 <nav class="tabs" aria-label="メニュー"><button class="tab" data-view="game" aria-selected="true">🚆 ゲーム</button><button class="tab" data-view="records" aria-selected="false">📊 記録</button><button class="tab" data-view="achievements" aria-selected="false">🏅 実績</button><button class="tab" data-view="transfer" aria-selected="false">🔄 データ引き継ぎ</button><button class="tab" data-view="settings" aria-selected="false">⚙ 設定</button></nav>
@@ -45,7 +45,7 @@
 </div><div class="toast hidden" id="toast"></div>
 <script>
 (()=>{'use strict';
-const GAME_VERSION='1.3.0';
+const GAME_VERSION='1.4.0';
 const $=id=>document.getElementById(id), DB_NAME='train-stop-challenge', DB_VERSION=1, STORE='save';
 const ACH=[
 ['初めての定位置','初めてピッタリ停車する','perfect',1],['神業ブレーキ','ピッタリ停車5回','perfect',5],['寸分の狂いなし','ピッタリ停車10回','perfect',10],['ミリ単位の職人','ピッタリ停車20回','perfect',20],['停車の神様','ピッタリ停車50回','perfect',50],['伝説の運転士','ピッタリ停車100回','perfect',100],
