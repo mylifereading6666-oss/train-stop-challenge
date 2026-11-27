@@ -1,0 +1,12 @@
+{
+  "name": "TRAIN STOP CHALLENGE",
+  "short_name": "TRAIN STOP",
+  "description": "ランダム条件で列車を正確に停車させる2Dゲーム",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#071522",
+  "theme_color": "#071522"
+}
